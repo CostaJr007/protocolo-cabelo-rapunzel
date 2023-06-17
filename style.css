@@ -36,7 +36,7 @@ main {
     display: block;
     position: relative;
 
-    width: calc(100vw - 200px);
+    width: calc(100vw - 270px);
 
     overflow: hidden;
 }
@@ -61,16 +61,6 @@ main {
     border: 0;
 }
 
-.pagamento {
-    width: calc(100vw - 20px);
-    height: 53px;
-
-    background-image: url("meios-de-pagamento.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .logo {
     width: 280px;
     height: 120px;
@@ -78,22 +68,6 @@ main {
     background-image: url("logotipo.png");
     background-repeat: no-repeat;
     background-size: auto;
-}
-
-h1 {
-    font-family: "Poppins", Sans-serif;
-    font-size: 38px;
-    color: white;
-    text-align: center;
-}
-
-.seta {
-    width: 50px;
-    height: 50px;
-
-    background-image: url("seta.gif");
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .comentarios {
@@ -109,13 +83,14 @@ h1 {
 
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     gap: 20px;
 
-    height: 45px;
+    height: 80px;
     padding: 0 20px;
 
+    text-align: center;
     color: #ffd5e6;
 }
 
@@ -125,11 +100,17 @@ footer {
     }
 
     .video {
-        width: 100%;
+        width: calc(100vw - 15px);
     }
 
     .comentarios {
         height: 100vh;
         margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .video {
+        width: 800px;
     }
 }
