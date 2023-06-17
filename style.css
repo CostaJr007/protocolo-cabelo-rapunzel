@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Tahoma, sans-serif;
+
+    background-color: #17000a;
+}
+
+.banner {
+    width: 100%;
+    height: 377px;
+
+    background-image: url("banner.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.video {
+    display: block;
+    position: relative;
+
+    width: calc(100vw - 200px);
+
+    overflow: hidden;
+}
+
+.video::before {
+    display: block;
+    content: "";
+
+    padding-top: calc(56.6% + 90px);
+}
+
+.video iframe {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    border: 0;
+}
+
+.pagamento {
+    width: calc(100vw - 20px);
+    height: 53px;
+
+    background-image: url("meios-de-pagamento.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo {
+    width: 280px;
+    height: 120px;
+
+    background-image: url("logotipo.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+h1 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 38px;
+    color: white;
+    text-align: center;
+}
+
+.seta {
+    width: 50px;
+    height: 50px;
+
+    background-image: url("seta.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.comentarios {
+    width: 100%;
+    height: 940px;
+    margin-bottom: 20px;
+
+    background-image: url("comentarios.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    height: 45px;
+    padding: 0 20px;
+
+    color: #ffd5e6;
+}
+
+@media only screen and (max-width: 699px) {
+    .banner {
+        height: 136px;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .comentarios {
+        height: 100vh;
+        margin-bottom: 0;
+    }
+}
