@@ -146,6 +146,9 @@ footer {
 
     .banner {
         height: 102px;
+
+        background-image: url("banner-mobile.jpg");
+        background-position: center;
     }
 
     .video {
