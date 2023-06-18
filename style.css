@@ -15,12 +15,49 @@ body {
     background-color: #17000a;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.faixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.faixa.black {
+    height: 70px;
+
+    background-color: #17000a;
+}
+
+h1 span {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: yellow;
+
+    line-height: 55px;
+    color: #17000a;
+}
+
+.faixa.purple {
+    height: 170px;
+
+    background-color: #ad006b;
+}
+
 .banner {
     width: 100%;
     height: 377px;
 
     background-image: url("banner.jpg");
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -95,8 +132,20 @@ footer {
 }
 
 @media only screen and (max-width: 699px) {
+    .faixa.purple {
+        height: 110px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h1 span {
+        line-height: 35px;
+    }
+
     .banner {
-        height: 136px;
+        height: 102px;
     }
 
     .video {
